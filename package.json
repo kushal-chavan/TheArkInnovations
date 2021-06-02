@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "the-ark-innovation",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Ark Innovation is a diversified information technology service provider",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Kushal Chavan",
   "dependencies": {
     "gatsby": "^3.6.2",
     "gatsby-plugin-gatsby-cloud": "^2.6.1",

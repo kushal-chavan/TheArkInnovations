@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `The Ark Innovation`,
+    description: `Ark Innovation is a diversified information technology service provider serving customers in the Banking, Automotive, Higher Education, Insurance and Medical industry. `,
+    author: `Kushal Chavan`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
