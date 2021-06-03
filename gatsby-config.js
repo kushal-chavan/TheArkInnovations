@@ -6,12 +6,14 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sass`,
     `gatsby-plugin-image`,
+    `gatsby-plugin-fontawesome-css`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
+        name: `assets`,
+        path: `${__dirname}/src/assets`,
       },
     },
     `gatsby-transformer-sharp`,
