@@ -1,24 +1,6 @@
 /*----------------------
     Carousel
 -----------------------*/
-.slick-list {
-    margin: 0 -10px;
-}
-
-.slick-slide {
-    margin: 0 10px;
-}
-
-.m-slides-0 {
-    .slick-list {
-        margin: 0;
-    }
-
-    .slick-slide {
-        margin: 0;
-    }
-}
-
 .slick-arrow {
     position: absolute;
     top: 50%;
@@ -30,11 +12,11 @@
     border-radius: 50%;
     font-size: 0;
     z-index: 3;
-    border: 1px solid $color-heading;
+    color:#fff;
     @include prefix(transition, all 0.3s linear, webkit moz ms o);
 
     &:hover {
-        color: $color-heading
+        color:rgb(204, 204, 204)
     }
 
     &.slick-next,
@@ -60,6 +42,14 @@
             content: "\e900";
         }
     }
+}
+
+
+.slider {
+    background-size: cover;
+    background-position: center center;
+    width: 1435px;
+    position: relative;
 }
 
 .carousel-arrows-light .slick-arrow {

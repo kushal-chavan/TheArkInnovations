@@ -4,6 +4,9 @@ module.exports = {
     description: `Ark Innovation is a diversified information technology service provider serving customers in the Banking, Automotive, Higher Education, Insurance and Medical industry. `,
     author: `Kushal Chavan`,
   },
+  backgrounds: {
+    node:`gatsby.png`,
+  },
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
@@ -31,6 +34,13 @@ module.exports = {
       },
     },
     `gatsby-plugin-gatsby-cloud`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `backgrounds`,
+        path: `${__dirname}/src/assets/images/slider`, // wherever background images are stored
+      },
+    }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
