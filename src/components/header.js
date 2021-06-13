@@ -1,5 +1,6 @@
 import * as React from "react"
 import { Link } from "gatsby"
+import logo from '../assets/images/logo.png'
 import "../assets/css/bootstrap.css"
 import "../assets/css/style.scss";
 
@@ -13,7 +14,7 @@ const Header = () => {
               <i className="icon-nav"></i>
             </button>
             <Link className="navbar-brand" to="/">
-              <h5>Ark Innovations</h5>
+            <img width="200px" src={logo} alt="logo" style={{padding:'5px 0px'}}/>
             </Link>
             <button className="navbar-toggler" type="button">
               <span className="menu-lines"><span></span></span>
@@ -167,10 +168,10 @@ const Header = () => {
                   <i className="icon-user"></i><span>Login</span>
                 </button>
               </li> */}
-              <li className="d-none d-xl-block">
+              {/* <li className="d-none d-xl-block">
                 <Link to="/" className="btn btn__primary btn__primary-style2 btn_ action__btn-contact">Request
                 A Quote</Link>
-              </li>
+              </li> */}
             </ul>
           </div>
         </nav>

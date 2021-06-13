@@ -1,8 +1,9 @@
 import * as React from "react"
+import { StaticImage } from "gatsby-plugin-image"
+import logo from '../assets/images/logo.png'
 
 const Footer = () => (
     <footer class="footer bg-heading">
-        <div class="bg-img"><img src="assets/images/backgrounds/2.png" alt="backgrounds"/></div>
         <div class="footer-contact pt-50 pb-50">
             <div class="container">
                 <div class="row">
@@ -47,15 +48,10 @@ const Footer = () => (
                     <div class="row">
                         <div class="col-sm-12 col-md-12 col-lg-4 footer-widget footer-widget-about">
                             <div class="footer-widget__content">
-                                <img src="assets/images/logo/logo-light.png" alt="logo" class="mb-30" />
+                            <img width="250px" src={logo} alt="logo" style={{padding:'10px 0px'}}/>
                                     <p class="color-gray mb-40">We are experienced professionals who understand that It services is
                                     changing, and are
                 true partners who care about your future business success.</p>
-                                    <ul class="social-icons list-unstyled mb-0">
-                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                    </ul>
                             </div>
                         </div>
                             <div class="col-sm-6 col-md-6 col-lg-2 footer-widget footer-widget-nav">

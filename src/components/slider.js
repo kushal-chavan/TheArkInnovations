@@ -16,10 +16,10 @@ return (
 <div>
     <Slider {...settings}>
         <div>
-            <img className="slider" src="https://www.hp.com/us-en/shop/app/assets/images/uploads/prod/25-best-hd-wallpapers-laptops159561982840438.jpg?impolicy=prdimg&imdensity=1&imwidth=1000" alt="slide img" />
+            <img className="slider mt-90" src="https://www.hp.com/us-en/shop/app/assets/images/uploads/prod/25-best-hd-wallpapers-laptops159561982840438.jpg?impolicy=prdimg&imdensity=1&imwidth=1000" alt="slide img" />
         </div>
         <div>
-            <img className="slider" src="https://www.hp.com/us-en/shop/app/assets/images/uploads/prod/25-best-hd-wallpapers-laptops159561982840438.jpg?impolicy=prdimg&imdensity=1&imwidth=1000" alt="slide img" />
+            <img className="slider mt-90" src="https://www.hp.com/us-en/shop/app/assets/images/uploads/prod/25-best-hd-wallpapers-laptops159561982840438.jpg?impolicy=prdimg&imdensity=1&imwidth=1000" alt="slide img" />
         </div>
     </Slider>
 </div>
