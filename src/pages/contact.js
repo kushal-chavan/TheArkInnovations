@@ -1,6 +1,7 @@
 import React from 'react';
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import Map from '../components/google-map';
 
 const Contact = () => {
 
@@ -8,7 +9,8 @@ const Contact = () => {
         <Layout>
         <Seo title="Contact Us" />
             <section className="contact-layout1">
-                <div className="container">
+                <Map />
+                <div className="container pt-5">
                     <div className="row">
                         <div className="col-sm-12 col-md-12 col-lg-6">
                             <form className="contact-panel__form" method="post" action="assets/php/contact.php" id="contactForm">

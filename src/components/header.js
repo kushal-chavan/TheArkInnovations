@@ -5,14 +5,22 @@ import "../assets/css/bootstrap.css"
 import "../assets/css/style.scss";
 
 const Header = () => {
+
+  const isActive = (route) => {
+    if (window.location.pathname === route) {
+      return " active";
+    }
+
+    return "";
+  }
   return (
     <div className="wrapper">
       <header className="header">
         <nav className="navbar navbar-expand-lg sticky-navbar">
           <div className="container">
-            <button type="button" className="action__btn action__btn-burgerMenu mr-30 d-none d-lg-block">
+            {/* <button type="button" className="action__btn action__btn-burgerMenu mr-30 d-none d-lg-block">
               <i className="icon-nav"></i>
-            </button>
+            </button> */}
             <Link className="navbar-brand" to="/">
             <img width="200px" src={logo} alt="logo" style={{padding:'5px 0px'}}/>
             </Link>
@@ -21,45 +29,11 @@ const Header = () => {
             </button>
             <div className="collapse navbar-collapse" id="mainNavigation">
               <ul className="navbar-nav mr-auto ml-auto">
-                <li className="nav__item  has-dropdown">
-                  <Link to="/" data-toggle="dropdown" className="dropdown-toggle nav__item-link active">Home</Link>
-                  <ul className="dropdown-menu">
-                    <li className="nav__item">
-                      <Link to="/" className="nav__item-link">Home Main</Link>
-                    </li>
-                    <li className="nav__item">
-                      <Link to="/" className="nav__item-link">Home Modern</Link>
-                    </li>
-                    <li className="nav__item">
-                      <Link to="/" className="nav__item-link">Home Classic</Link>
-                    </li>
-                  </ul>
+                <li className="nav__item">
+                  <Link to="/" data-toggle="dropdown" className={"nav__item-link" + isActive('/')}>Home</Link>
                 </li>
-                <li className="nav__item  has-dropdown">
-                  <Link to="/" data-toggle="dropdown" className="dropdown-toggle nav__item-link">Company</Link>
-                  <ul className="dropdown-menu">
-                    <li className="nav__item">
-                      <Link to="/" className="nav__item-link">About Us</Link>
-                    </li>
-                    <li className="nav__item">
-                      <Link to="/" className="nav__item-link">Why Choose Us</Link>
-                    </li>
-                    <li className="nav__item">
-                      <Link to="/" className="nav__item-link">Leadership Team</Link>
-                    </li>
-                    <li className="nav__item">
-                      <Link to="/" className="nav__item-link">Award & Recognition</Link>
-                    </li>
-                    <li className="nav__item">
-                      <Link to="/" className="nav__item-link">Pricing & Plans</Link>
-                    </li>
-                    <li className="nav__item">
-                      <Link to="/" className="nav__item-link">Help & FAQs</Link>
-                    </li>
-                    <li className="nav__item">
-                      <Link to="/" className="nav__item-link">Careers</Link>
-                    </li>
-                  </ul>
+                <li className="nav__item">
+                  <Link to="/about-us" className={"nav__item-link" + isActive('/about-us')}>About Us</Link>
                 </li>
                 <li className="nav__item  has-dropdown">
                   <Link to="/" data-toggle="dropdown" className="dropdown-toggle nav__item-link">IT Solutions</Link>
@@ -117,48 +91,8 @@ const Header = () => {
                     </li>
                   </ul>
                 </li>
-                <li className="nav__item  has-dropdown">
-                  <Link to="/" data-toggle="dropdown" className="dropdown-toggle nav__item-link">News&Media</Link>
-                  <ul className="dropdown-menu">
-                    <li className="nav__item">
-                      <Link to="/" className="nav__item-link">Our Blog</Link>
-                    </li>
-                    <li className="nav__item">
-                      <Link to="/" className="nav__item-link">Single Blog Post</Link>
-                    </li>
-                    <li className="nav__item">
-                      <Link to="/" className="nav__item-link">Case Studies Grid</Link>
-                    </li>
-                    <li className="nav__item">
-                      <Link to="/" className="nav__item-link">Case Studies Modern</Link>
-                    </li>
-                    <li className="nav__item">
-                      <Link to="/" className="nav__item-link">Case Studies Classic</Link>
-                    </li>
-                    <li className="nav__item">
-                      <Link to="/" className="nav__item-link">Single Case Study</Link>
-                    </li>
-                  </ul>
-                </li>
-                <li className="nav__item  has-dropdown">
-                  <Link to="#" data-toggle="dropdown" className="dropdown-toggle nav__item-link">Features</Link>
-                  <ul className="dropdown-menu">
-                    <li className="nav__item">
-                      <Link to="/" className="nav__item-link">Coming Soon</Link>
-                    </li>
-                    <li className="nav__item">
-                      <Link to="/" className="nav__item-link">404 Page</Link>
-                    </li>
-                    <li className="nav__item">
-                      <Link to="/" className="nav__item-link  open-register-popup">Register</Link>
-                    </li>
-                    <li className="nav__item">
-                      <Link to="/" className="nav__item-link  open-login-popup">Login</Link>
-                    </li>
-                  </ul>
-                </li>
                 <li className="nav__item">
-                  <Link to="/" className="nav__item-link">Contacts</Link>
+                  <Link to="/contact" className={"nav__item-link" + isActive('/contact')}>Contacts</Link>
                 </li>
               </ul>
             </div>
