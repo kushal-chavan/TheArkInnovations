@@ -35,6 +35,9 @@ const Header = () => {
                 <li className="nav__item">
                   <Link to="/about-us" className={"nav__item-link" + isActive('/about-us')}>About Us</Link>
                 </li>
+                <li className="nav__item">
+                  <Link to="/services" className={"nav__item-link" + isActive('/services')}>Services</Link>
+                </li>
                 <li className="nav__item  has-dropdown">
                   <Link to="/" data-toggle="dropdown" className="dropdown-toggle nav__item-link">IT Solutions</Link>
                   <ul className="dropdown-menu wide-dropdown-menu">
@@ -66,25 +69,15 @@ const Header = () => {
                         <div className="col-sm-6 dropdown-menu-col">
                           <Link to="/" className="nav__item-link dropdown-menu-title">Industries</Link>
                           <ul className="nav flex-column">
-                            <li className="nav__item"><Link className="nav__item-link"
-                              to="/">Education,
-                              Non-Profit</Link></li>
-                            <li className="nav__item"><Link className="nav__item-link"
-                              to="/">Accounting,
-                              Finance</Link></li>
-                            <li className="nav__item"><Link className="nav__item-link"
-                              to="/">Government &
-                              Public</Link></li>
-                            <li className="nav__item"><Link className="nav__item-link" to="/">Energy
-                            &
-                              Utilities</Link></li>
-                            <li className="nav__item"><Link className="nav__item-link" to="/">Legal,
-                            Law
-                              Firms</Link></li>
-                            <li className="nav__item"><Link className="nav__item-link"
-                              to="/">Manufacturing</Link>
-                            </li>
-
+                            <li className="nav__item"><Link className="nav__item-link" to="/">University</Link></li>
+                            <li className="nav__item"><Link className="nav__item-link" to="/">Information Technology</Link></li>
+                            <li className="nav__item"><Link className="nav__item-link" to="/">Healthcare</Link></li>
+                            <li className="nav__item"><Link className="nav__item-link" to="/">Financial</Link></li>
+                            <li className="nav__item"><Link className="nav__item-link" to="/">Automotive</Link></li>
+                            <li className="nav__item"><Link className="nav__item-link" to="/">Consumer Products & Retail</Link></li>
+                            <li className="nav__item"><Link className="nav__item-link" to="/">Transportation & Logistics</Link></li>
+                            <li className="nav__item"><Link className="nav__item-link" to="/">Energy</Link></li>
+                            <li className="nav__item"><Link className="nav__item-link" to="/">Insurance</Link></li>
                           </ul>
                         </div>
                       </div>
