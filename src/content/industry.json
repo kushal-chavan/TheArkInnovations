@@ -1,0 +1,47 @@
+[
+    {
+        "name":"University",
+        "thumbnail_image":"../assets/images/services/7.jpg",
+        "detail":"Drive your business and manage risk with a global industry leader in cybersecurity, cloud, and managed security services and extend your team with leading experts."
+    },
+    {
+        "name":"Information Technology",
+        "thumbnail_image":"../assets/images/services/7.jpg",
+        "detail":"Drive your business and manage risk with a global industry leader in cybersecurity, cloud, and managed security services and extend your team with leading experts."
+    },
+    {
+        "name":"Healthcare",
+        "thumbnail_image":"../assets/images/services/7.jpg",
+        "detail":"Drive your business and manage risk with a global industry leader in cybersecurity, cloud, and managed security services and extend your team with leading experts."
+    },
+    {
+        "name":"Financial",
+        "thumbnail_image":"../assets/images/services/7.jpg",
+        "detail":"Drive your business and manage risk with a global industry leader in cybersecurity, cloud, and managed security services and extend your team with leading experts."
+    },
+    {
+        "name":"Automotive",
+        "thumbnail_image":"../assets/images/services/7.jpg",
+        "detail":"Drive your business and manage risk with a global industry leader in cybersecurity, cloud, and managed security services and extend your team with leading experts."
+    },
+    {
+        "name":"Energy",
+        "thumbnail_image":"../assets/images/services/7.jpg",
+        "detail":"Drive your business and manage risk with a global industry leader in cybersecurity, cloud, and managed security services and extend your team with leading experts."
+    },
+    {
+        "name":"Insurance",
+        "thumbnail_image":"../assets/images/services/7.jpg",
+        "detail":"Drive your business and manage risk with a global industry leader in cybersecurity, cloud, and managed security services and extend your team with leading experts."
+    },
+    {
+        "name":"Consumer Products & Retail",
+        "thumbnail_image":"../assets/images/services/7.jpg",
+        "detail":"Drive your business and manage risk with a global industry leader in cybersecurity, cloud, and managed security services and extend your team with leading experts."
+    },
+    {
+        "name":"Transportation & Logistics",
+        "thumbnail_image":"../assets/images/services/7.jpg",
+        "detail":"Drive your business and manage risk with a global industry leader in cybersecurity, cloud, and managed security services and extend your team with leading experts."
+    }
+]

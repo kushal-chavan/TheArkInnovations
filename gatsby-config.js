@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `The Ark Innovation`,
     description: `Ark Innovation is a diversified information technology service provider serving customers in the Banking, Automotive, Higher Education, Insurance and Medical industry. `,
-    author: `Kushal Chavan`,
+    author: `The Ark Innovation`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

@@ -5,14 +5,6 @@ import "../assets/css/bootstrap.css"
 import "../assets/css/style.scss";
 
 const Header = () => {
-
-  const isActive = (route) => {
-    if (window.location.pathname === route) {
-      return " active";
-    }
-
-    return "";
-  }
   return (
     <div className="wrapper">
       <header className="header">
@@ -30,13 +22,10 @@ const Header = () => {
             <div className="collapse navbar-collapse" id="mainNavigation">
               <ul className="navbar-nav mr-auto ml-auto">
                 <li className="nav__item">
-                  <Link to="/" data-toggle="dropdown" className={"nav__item-link" + isActive('/')}>Home</Link>
+                  <Link to="/" data-toggle="dropdown" className={"nav__item-link"}  activeClassName="active">Home</Link>
                 </li>
                 <li className="nav__item">
-                  <Link to="/about-us" className={"nav__item-link" + isActive('/about-us')}>About Us</Link>
-                </li>
-                <li className="nav__item">
-                  <Link to="/services" className={"nav__item-link" + isActive('/services')}>Services</Link>
+                  <Link to="/about-us" className={"nav__item-link"} activeClassName="active">About Us</Link>
                 </li>
                 <li className="nav__item  has-dropdown">
                   <Link to="/" data-toggle="dropdown" className="dropdown-toggle nav__item-link">IT Solutions</Link>
@@ -85,7 +74,13 @@ const Header = () => {
                   </ul>
                 </li>
                 <li className="nav__item">
-                  <Link to="/contact" className={"nav__item-link" + isActive('/contact')}>Contacts</Link>
+                  <Link to="/services" className={"nav__item-link"} activeClassName="active">Services</Link>
+                </li>
+                <li className="nav__item">
+                  <Link to="/career" className={"nav__item-link"}  activeClassName="active">Career</Link>
+                </li>
+                <li className="nav__item">
+                  <Link to="/contact" className={"nav__item-link"} activeClassName="active">Contacts</Link>
                 </li>
               </ul>
             </div>

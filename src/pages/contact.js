@@ -13,7 +13,7 @@ const Contact = () => {
                 <div className="container pt-5">
                     <div className="row">
                         <div className="col-sm-12 col-md-12 col-lg-6">
-                            <form className="contact-panel__form" method="post" action="assets/php/contact.php" id="contactForm">
+                            <form className="contact-panel__form" method="post" action="" id="contactForm">
                                 <div className="row">
                                     <div className="col-sm-12">
                                         <h4 className="contact-panel__title">Get In Touch</h4>
