@@ -28,7 +28,7 @@ const Header = () => {
                   <Link to="/about-us" className={"nav__item-link"} activeClassName="active">About Us</Link>
                 </li>
                 <li className="nav__item  has-dropdown">
-                  <Link to="/" data-toggle="dropdown" className="dropdown-toggle nav__item-link">IT Solutions</Link>
+                  <div data-toggle="dropdown" style={{cursor:'pointer'}} className="dropdown-toggle nav__item-link">IT Solutions</div>
                   <ul className="dropdown-menu wide-dropdown-menu">
                     <li className="nav__item">
                       <div className="row mx-0">

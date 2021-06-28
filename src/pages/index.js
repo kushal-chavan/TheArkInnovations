@@ -6,6 +6,7 @@ import BackgroundSlider from 'gatsby-image-background-slider'
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import Img from "gatsby-image"
+import ItSolutions from '../content/it-solutions.json';
 import MySlider from "../components/slider"
 
 const IndexPage = () => (
@@ -37,23 +38,22 @@ const IndexPage = () => (
     <section className="services-layout3 pt-40 pb-100">
       <div className="container">
         <div className="row">
-          {[1,2,3,4,5,6].map(i =>
-            <div className="col-sm-12 col-md-6 col-lg-4" key={i}>
-              {i !== 6 && <div className="service-item">
+          {ItSolutions.map((item, i) =>
+            <div className="col-sm-12 col-md-6 col-lg-4" key={item.name}>
+              {i !== 5 && <div className="service-item">
                 <div className="service-item__content">
                   <div className="service-item__icon">
-                    <i className="icon-server"></i>
+                    <i className={item.icon}></i>
                   </div>
-                  <h4 className="service-item__title">IT Management <br /> Services</h4>
-                  <p className="service-item__desc">IT management service that manages and oversees the IT infrastructure of
-                  organization responsible for network and operations which includes data communication.</p>
+                  <h4 className="service-item__title">{item.name}</h4>
+                  <p className="service-item__desc">{item.desc}</p>
                   <a href="/" className="btn btn__secondary btn__link">
                     <span>Read More</span>
                     <i className="icon-arrow-right"></i>
                   </a>
                 </div>
               </div> }
-              {i === 6 && <div className="service-item service-item-custom bg-overlay bg-overlay-primary" style={{background: "#000", zIndex: 1}}>
+              {i === 5 && <div className="service-item service-item-custom bg-overlay bg-overlay-primary" style={{background: "#000", zIndex: 1, marginTop: '0'}}>
                 {/* <div className="bg-img">
                   <img src="assets/images/services/6.jpg" alt="background" />
                 </div> */}
