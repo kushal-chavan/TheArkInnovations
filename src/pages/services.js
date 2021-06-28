@@ -28,7 +28,8 @@ const Services = () => {
           </div>
           <div className="row">
             {shuffle(Industries).slice(0, 6).map(item => <div className="col-sm-12 col-md-4 col-lg-4">
-              <div className="service-item" key={item.name}>
+              <div className="service-item" key={item.name} data-sal="slide-down"
+                        data-sal-delay="300">
                 <div className="service-item__img">
                   <img src={serImg} alt="service" className="w-100" />
                 </div>

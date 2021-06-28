@@ -1,33 +1,36 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
-import { useStaticQuery, graphql } from "gatsby"
-import BackgroundSlider from 'gatsby-image-background-slider'
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import Img from "gatsby-image"
 import ItSolutions from '../content/it-solutions.json';
 import MySlider from "../components/slider"
+import background from '../assets/images/backgrounds/5.png'
 
 const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
-    <MySlider/>
+    <MySlider />
     <section className="about-layout5 pt-130 pb-0">
       <div className="container">
         <div className="row heading-layout2">
-          <div className="col-12">
+          <div className="col-12"
+            data-sal="slide-left"
+            data-sal-delay="200"
+            data-sal-easing="ease">
             <h2 className="heading__subtitle color-body">Nationwide Service, Local Expertise</h2>
           </div>
-          <div className="col-sm-12 col-md-12 col-lg-12 col-xl-6">
+          <div className="col-sm-12 col-md-12 col-lg-12 col-xl-6"
+            data-sal="slide-right"
+            data-sal-delay="200"
+            data-sal-easing="ease">
             <h3 className="heading__title mb-30">Our technology allows you to offer the <span className="underlined-text">latest
-                software</span> to your possible customers!
+              software</span> to your possible customers!
             </h3>
           </div>
           <div className="col-sm-12 col-md-12 col-lg-12 col-xl-5 offset-xl-1">
             <div className="about__Text">
               <p>Improve efficiency, leverage tech, and provide better customer experiences with the modern technology
-              services available allover the world. Our skilled personnel, utilising the latest processing software,
+                services available allover the world. Our skilled personnel, utilising the latest processing software,
                 combined with decades of experience.</p>
             </div>
             {/* <img src="assets/images/about/singnture.png" alt="singnture"/> */}
@@ -39,7 +42,10 @@ const IndexPage = () => (
       <div className="container">
         <div className="row">
           {ItSolutions.map((item, i) =>
-            <div className="col-sm-12 col-md-6 col-lg-4" key={item.name}>
+            <div className="col-sm-12 col-md-6 col-lg-4" key={item.name}
+              data-sal="slide-up"
+              data-sal-delay="200"
+              data-sal-easing="ease">
               {i !== 5 && <div className="service-item">
                 <div className="service-item__content">
                   <div className="service-item__icon">
@@ -52,15 +58,17 @@ const IndexPage = () => (
                     <i className="icon-arrow-right"></i>
                   </a>
                 </div>
-              </div> }
-              {i === 5 && <div className="service-item service-item-custom bg-overlay bg-overlay-primary" style={{background: "#000", zIndex: 1, marginTop: '0'}}>
-                {/* <div className="bg-img">
-                  <img src="assets/images/services/6.jpg" alt="background" />
-                </div> */}
+              </div>}
+              {i === 5 && <div className="service-item service-item-custom bg-overlay bg-overlay-primary" style={{ background: "#000", zIndex: 1, marginTop: '0' }}
+              data-sal="slide-left"
+              data-sal-delay="200"
+              data-sal-easing="ease">
+                <div className="bg-img">
+                  <img src={background} alt="background" />
+                </div>
                 <div>
-                  <h4 className="service-item__title">Help Your Business Win!</h4>
-                  <p className="service-item__desc">Mintech is a trusted advisor and an objective resource for more than 17000
-                    organizations in 90+ countries.</p>
+                  <h4 className="service-item__title">{item.name}</h4>
+                  <p className="service-item__desc">{item.desc}</p>
                 </div>
                 <a href="services-it-solutions-single.html" className="btn btn__white btn__bordered btn__icon btn__xl">
                   <span>Find Your Solution</span>
@@ -72,12 +80,15 @@ const IndexPage = () => (
         </div>
       </div>
     </section>
-    <section className="about-layout2 pb-130 bg-gray">
+    <section className="about-layout2 pb-130 bg-gray"
+    data-sal="flip-up"
+    data-sal-delay="200"
+    data-sal-easing="ease">
       <div className="container">
         <div className="row align-items-center">
           <div className="col-sm-12 col-md-12 col-lg-12 col-xl-5">
             <div className="about__img">
-              <img src="assets/images/about/2.jpg" alt="about" />
+              {/* <img src={background} alt="about" /> */}
               <div className="cta-banner">
                 <h4 className="cta-banner__title mb-30">Thinking insights, verified driven research, and metrics data help
                   you make the right decisions!
