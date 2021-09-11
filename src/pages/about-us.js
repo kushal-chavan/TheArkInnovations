@@ -11,12 +11,8 @@ const AboutUs = () => {
             <Seo title={AboutData.pageName} />
             <section className="about-layout1 pt-200">
                 <div className="container">
-                    <h1 className="mb-50 text-center" 
-                        data-sal="slide-up"
-                        data-sal-delay="100">{AboutData.pageName}</h1>
-                    <div className="row align-items-center"
-                        data-sal="slide-down"
-                        data-sal-delay="100">
+                    <h1 className="mb-50 text-center">{AboutData.pageName}</h1>
+                    <div className="row align-items-center">
                         <div className="col-sm-12 col-md-12 col-lg-6">
                             <div className="heading-layout2 mb-30">
                                 <h3 className="heading__title mb-30">{AboutData.titleOne}</h3>

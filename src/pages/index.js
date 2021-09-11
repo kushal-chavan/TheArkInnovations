@@ -13,16 +13,10 @@ const IndexPage = () => (
     <section className="about-layout5 pt-130 pb-0">
       <div className="container">
         <div className="row heading-layout2">
-          <div className="col-12"
-            data-sal="slide-left"
-            data-sal-delay="200"
-            data-sal-easing="ease">
+          <div className="col-12">
             <h2 className="heading__subtitle color-body">Nationwide Service, Local Expertise</h2>
           </div>
-          <div className="col-sm-12 col-md-12 col-lg-12 col-xl-6"
-            data-sal="slide-right"
-            data-sal-delay="200"
-            data-sal-easing="ease">
+          <div className="col-sm-12 col-md-12 col-lg-12 col-xl-6">
             <h3 className="heading__title mb-30">Our technology allows you to offer the <span className="underlined-text">latest
               software</span> to your possible customers!
             </h3>
@@ -42,10 +36,7 @@ const IndexPage = () => (
       <div className="container">
         <div className="row">
           {ItSolutions.map((item, i) =>
-            <div className="col-sm-12 col-md-6 col-lg-4" key={item.name}
-              data-sal="slide-up"
-              data-sal-delay="200"
-              data-sal-easing="ease">
+            <div className="col-sm-12 col-md-6 col-lg-4" key={item.name}>
               {i !== 5 && <div className="service-item">
                 <div className="service-item__content">
                   <div className="service-item__icon">
@@ -59,10 +50,7 @@ const IndexPage = () => (
                   </a>
                 </div>
               </div>}
-              {i === 5 && <div className="service-item service-item-custom bg-overlay bg-overlay-primary" style={{ background: "#000", zIndex: 1, marginTop: '0' }}
-              data-sal="slide-left"
-              data-sal-delay="200"
-              data-sal-easing="ease">
+              {i === 5 && <div className="service-item service-item-custom bg-overlay bg-overlay-primary" style={{ background: "#000", zIndex: 1, marginTop: '0' }}>
                 <div className="bg-img">
                   <img src={background} alt="background" />
                 </div>
@@ -80,10 +68,7 @@ const IndexPage = () => (
         </div>
       </div>
     </section>
-    <section className="about-layout2 pb-130 bg-gray"
-    data-sal="flip-up"
-    data-sal-delay="200"
-    data-sal-easing="ease">
+    <section className="about-layout2 pb-130 bg-gray">
       <div className="container">
         <div className="row align-items-center">
           <div className="col-sm-12 col-md-12 col-lg-12 col-xl-5">

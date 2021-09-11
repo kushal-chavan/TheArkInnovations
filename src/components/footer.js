@@ -7,10 +7,7 @@ const Footer = () => (
     <footer class="footer bg-heading">
         <div class="footer-contact pt-50 pb-50">
             <div class="container">
-                <div class="row" 
-                data-sal="slide-left"
-                data-sal-delay="100"
-                data-sal-easing="ease">
+                <div class="row">
                     <div class="col-sm-4 col-md-4 col-lg-2">
                         <div class="contact-info">
                             <h6 class="footer-widget__title">Quick Contact</h6>
@@ -49,10 +46,7 @@ const Footer = () => (
             </div>
             <div class="footer-primary">
                 <div class="container">
-                    <div class="row" 
-                    data-sal="slide-up"
-                    data-sal-delay="100"
-                    data-sal-easing="ease">
+                    <div class="row">
                         <div class="col-sm-12 col-md-12 col-lg-4 footer-widget footer-widget-about">
                             <div class="footer-widget__content">
                             <img width="250px" src={logo} alt="logo" style={{padding:'10px 0px'}}/>
