@@ -2,6 +2,7 @@ import * as React from "react";
 import Layout from "../components/layout";
 import Seo from "../components/seo";
 import background from '../assets/images/backgrounds/6.png';
+import { Link } from "gatsby"
 
 const Career = () => (
     <Layout>
@@ -32,10 +33,10 @@ const Career = () => (
                                     <li>09:00 AM - 06:00 PM</li>
                                 </ul>
                             </div>
-                            <a href="contacs.html" className="btn btn__white btn__bordered btn__icon btn__xl">
+                            <Link to="/contact" className="btn btn__white btn__bordered btn__icon btn__xl">
                                 <span>Find Your Solution</span>
                                 <i className="icon-arrow-right"></i>
-                            </a>
+                            </Link>
                         </div>
                     </div>
                     <div className="col-sm-12 col-md-12 col-lg-6 offset-lg-1">

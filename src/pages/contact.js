@@ -2,6 +2,7 @@ import React from 'react';
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import Map from '../components/google-map';
+import { Link } from "gatsby"
 
 const Contact = () => {
 
@@ -84,10 +85,10 @@ const Contact = () => {
                                         <li>09:00 AM - 06:00 PM</li>
                                     </ul>
                                 </div>
-                                <a href="contacs.html" className="btn btn__white btn__bordered btn__icon btn__xl">
+                                <Link to="/contact" className="btn btn__white btn__bordered btn__icon btn__xl">
                                     <span>Find Your Solution</span>
                                     <i className="icon-arrow-right"></i>
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>

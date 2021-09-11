@@ -1,10 +1,13 @@
-import * as React from "react"
+import React, {useState} from "react"
 import { Link } from "gatsby"
 import logo from '../assets/images/logo.png'
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 import "../assets/css/bootstrap.css"
 import "../assets/css/style.scss";
 
 const Header = () => {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [show, setShow] = useState(false)
   return (
     <div className="wrapper">
       <header className="header">
@@ -16,20 +19,20 @@ const Header = () => {
             <Link className="navbar-brand" to="/">
             <img width="200px" src={logo} alt="logo" style={{padding:'5px 0px'}}/>
             </Link>
-            <button className="navbar-toggler" type="button">
+            <button className={"navbar-toggler " + (mobileMenuOpen ? "actived": "")} type="button" onClick={() => {setMobileMenuOpen(state => !state); setShow(false)}}>
               <span className="menu-lines"><span></span></span>
             </button>
-            <div className="collapse navbar-collapse" id="mainNavigation">
+            <div className={"collapse navbar-collapse " + (mobileMenuOpen ? "menu-opened": "")} id="mainNavigation">
               <ul className="navbar-nav mr-auto ml-auto">
                 <li className="nav__item">
-                  <Link to="/" data-toggle="dropdown" className={"nav__item-link"}  activeClassName="active">Home</Link>
+                  <AniLink to="/" data-toggle="dropdown" className={"nav__item-link"}  activeClassName="active">Home</AniLink>
                 </li>
                 <li className="nav__item">
-                  <Link to="/about-us" className={"nav__item-link"} activeClassName="active">About Us</Link>
+                  <AniLink to="/about-us" className={"nav__item-link"} activeClassName="active">About Us</AniLink>
                 </li>
                 <li className="nav__item  has-dropdown">
-                  <div data-toggle="dropdown" style={{cursor:'pointer'}} className="dropdown-toggle nav__item-link">IT Solutions</div>
-                  <ul className="dropdown-menu wide-dropdown-menu">
+                  <div data-toggle="dropdown" onClick={() => setShow(state => !state)} aria-expanded="false" style={{cursor:'pointer'}} className="dropdown-toggle nav__item-link">IT Solutions</div>
+                  <ul className={"dropdown-menu wide-dropdown-menu " + (show ? "show": "")}>
                     <li className="nav__item">
                       <div className="row mx-0">
                         <div className="col-sm-6 dropdown-menu-col">

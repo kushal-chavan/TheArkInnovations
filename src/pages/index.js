@@ -70,7 +70,7 @@ const IndexPage = () => (
                   <h4 className="service-item__title">{item.name}</h4>
                   <p className="service-item__desc">{item.desc}</p>
                 </div>
-                <a href="services-it-solutions-single.html" className="btn btn__white btn__bordered btn__icon btn__xl">
+                <a href="/" className="btn btn__white btn__bordered btn__icon btn__xl">
                   <span>Find Your Solution</span>
                   <i className="icon-arrow-right"></i>
                 </a>
@@ -93,7 +93,7 @@ const IndexPage = () => (
                 <h4 className="cta-banner__title mb-30">Thinking insights, verified driven research, and metrics data help
                   you make the right decisions!
                 </h4>
-                <a href="case-studies-modern.html" className="btn btn__primary btn__link">
+                <a href="/" className="btn btn__primary btn__link">
                   <span>Read Case Studies</span><i className="icon-arrow-right icon-outlined"></i>
                 </a>
               </div>

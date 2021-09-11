@@ -750,6 +750,10 @@
             height: 13px;
         }
 
+        .active {
+            color: #007bff !important;
+        }
+
         .collapse:not(.show) {
             display: block;
         }
