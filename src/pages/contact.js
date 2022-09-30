@@ -68,14 +68,14 @@ const Contact = () => {
                                 <div className="contact-block">
                                     <h5 className="contact-block__title">Our Location</h5>
                                     <ul className="contact-block__list list-unstyled">
-                                        <li>2307 Beverley Rd Brooklyn, New York 11226 United States.</li>
+                                        <li>Florida United States.</li>
                                     </ul>
                                 </div>
                                 <div className="contact-block">
                                     <h5 className="contact-block__title">Quick Contact</h5>
                                     <ul className="contact-block__list list-unstyled">
-                                        <li><a href="mailto:Mintech@7oroof.com"></a>Email: Mintech@7oroof.com</li>
-                                        <li><a href="mailto:Mintech@7oroof.com"></a>Support: Mintech@7oroof.com</li>
+                                        <li><a href="mailto:info@thearkinnovations.com"></a>Email: info@thearkinnovations.com</li>
+                                        <li><a href="mailto:support@thearkinnovations.com"></a>Support: support@thearkinnovations.com</li>
                                     </ul>
                                 </div>
                                 <div className="contact-block">

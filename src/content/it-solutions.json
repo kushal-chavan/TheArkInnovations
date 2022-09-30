@@ -2,31 +2,42 @@
     {
         "name":"IT Management",
         "icon":"icon-server",
+        "slug": "it-management",
+        "visible": true,
         "desc":"IT management service that manages and oversees the IT infrastructure of organization responsible for network and operations which includes data communication."
     },
     {
         "name":"Cyber Security",
         "icon":"icon-cloud",
+        "slug": "cyber-security",
+        "visible": true,
         "desc":"Drive your business and manage risk with a global industry leader in cybersecurity, cloud, and managed security services and extend your team with leading experts."
     },
     {
         "name":"Cloud Computing",
         "icon":"icon-hosting",
+        "slug": "cloud-computing",
+        "visible": true,
         "desc":"Cloud computing is the on-demand availability of computer system resources, especially data storage and computing power, without direct active management by the user."
     },
     {
         "name":"IT Consulting",
         "icon":"icon-technician",
+        "slug": "it-consulting",
+        "visible": true,
         "desc":"Trying to solve all your IT challenges internally can become costly and a major distraction, Leveraging knowledgeable IT consulting firms like ushelps your business remain secure."
     },
     {
         "name":"Software Development",
         "icon":"icon-programming",
+        "slug": "software-development",
+        "visible": true,
         "desc":"With shorter product cycles, rapid innovation, and mergers contributing to constant change, you are faced with making business decisions every day to advance your mission."
     },
     {
         "name":"Help Your Business Win!",
         "icon":"icon-arrow-right",
+        "visible": false,
         "desc":"Mintech is a trusted advisor and an objective resource for more than 17000 organizations in 90+ countries"
     }
 ]

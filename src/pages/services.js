@@ -34,7 +34,7 @@ const Services = () => {
                 </div>
                 <h4 className="service-item__title">{item.name}</h4>
                 <p className="service-item__desc">{item.detail}</p>
-                <Link to="/services" className="btn btn__secondary"><span>Read More</span>
+                <Link to={'/service/'+item.slug} className="btn btn__secondary"><span>Read More</span>
                   <i className="icon-arrow-right"></i>
                 </Link>
               </div>

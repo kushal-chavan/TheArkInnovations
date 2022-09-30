@@ -1,9 +1,12 @@
-import React, {useState} from "react"
+import React, { useState } from "react"
 import { Link } from "gatsby"
 import logo from '../assets/images/logo.png'
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import "../assets/css/bootstrap.css"
 import "../assets/css/style.scss";
+// Data
+import Industries from '../content/industry.json';
+import ItSolutions from '../content/it-solutions.json';
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -17,59 +20,42 @@ const Header = () => {
               <i className="icon-nav"></i>
             </button> */}
             <Link className="navbar-brand" to="/">
-            <img width="200px" src={logo} alt="logo" style={{padding:'5px 0px'}}/>
+              <img width="150px" src={logo} alt="logo" style={{ padding: '5px 0px' }} />
             </Link>
-            <button className={"navbar-toggler " + (mobileMenuOpen ? "actived": "")} type="button" onClick={() => {setMobileMenuOpen(state => !state); setShow(false)}}>
+            <button className={"navbar-toggler " + (mobileMenuOpen ? "actived" : "")} type="button" onClick={() => { setMobileMenuOpen(state => !state); setShow(false) }}>
               <span className="menu-lines"><span></span></span>
             </button>
-            <div className={"collapse navbar-collapse " + (mobileMenuOpen ? "menu-opened": "")} id="mainNavigation">
+            <div className={"collapse navbar-collapse " + (mobileMenuOpen ? "menu-opened" : "")} id="mainNavigation">
               <ul className="navbar-nav mr-auto ml-auto">
                 <li className="nav__item">
-                  <AniLink to="/" data-toggle="dropdown" className={"nav__item-link"}  activeClassName="active">Home</AniLink>
+                  <AniLink to="/" data-toggle="dropdown" className={"nav__item-link"} activeClassName="active">Home</AniLink>
                 </li>
                 <li className="nav__item">
                   <AniLink to="/about-us" className={"nav__item-link"} activeClassName="active">About Us</AniLink>
                 </li>
                 <li className="nav__item  has-dropdown">
-                  <div data-toggle="dropdown" onClick={() => setShow(state => !state)} aria-expanded="false" style={{cursor:'pointer'}} className="dropdown-toggle nav__item-link">IT Solutions</div>
-                  <ul className={"dropdown-menu wide-dropdown-menu " + (show ? "show": "")}>
+                  <div data-toggle="dropdown" onClick={() => setShow(state => !state)} aria-expanded="false" style={{ cursor: 'pointer' }} className="dropdown-toggle nav__item-link">IT Solutions</div>
+                  <ul className={"dropdown-menu wide-dropdown-menu " + (show ? "show" : "")}>
                     <li className="nav__item">
                       <div className="row mx-0">
                         <div className="col-sm-6 dropdown-menu-col">
                           <Link to="/" className="nav__item-link dropdown-menu-title">IT Solutions</Link>
                           <ul className="nav flex-column">
-                            <li className="nav__item"><Link className="nav__item-link" to="/">IT
-                              Management</Link>
-                            </li>
-                            <li className="nav__item"><Link className="nav__item-link" to="/">Cyber
-                              Security</Link>
-                            </li>
-                            <li className="nav__item"><Link className="nav__item-link" to="/">Cloud
-                              Computing</Link>
-                            </li>
-                            <li className="nav__item"><Link className="nav__item-link" to="/">IT
-                              Consulting</Link>
-                            </li>
-                            <li className="nav__item"><Link className="nav__item-link" to="/">Software
-                              Dev</Link>
-                            </li>
-                            <li className="nav__item"><Link className="nav__item-link" to="/">IT Support</Link>
-                            </li>
-
+                            {
+                              ItSolutions.filter(i => i.visible === true).map((item) => {
+                                return <li className="nav__item"><Link className="nav__item-link" to={"/it-solutions/"+item.slug}>{item.name}</Link></li>
+                              })
+                            }
                           </ul>
                         </div>
                         <div className="col-sm-6 dropdown-menu-col">
                           <Link to="/" className="nav__item-link dropdown-menu-title">Industries</Link>
                           <ul className="nav flex-column">
-                            <li className="nav__item"><Link className="nav__item-link" to="/">University</Link></li>
-                            <li className="nav__item"><Link className="nav__item-link" to="/">Information Technology</Link></li>
-                            <li className="nav__item"><Link className="nav__item-link" to="/">Healthcare</Link></li>
-                            <li className="nav__item"><Link className="nav__item-link" to="/">Financial</Link></li>
-                            <li className="nav__item"><Link className="nav__item-link" to="/">Automotive</Link></li>
-                            <li className="nav__item"><Link className="nav__item-link" to="/">Consumer Products & Retail</Link></li>
-                            <li className="nav__item"><Link className="nav__item-link" to="/">Transportation & Logistics</Link></li>
-                            <li className="nav__item"><Link className="nav__item-link" to="/">Energy</Link></li>
-                            <li className="nav__item"><Link className="nav__item-link" to="/">Insurance</Link></li>
+                            {
+                              Industries.map((item) => {
+                                return <li key={item.slug} className="nav__item"><Link className="nav__item-link" to={'/service/' + item.slug}>{item.name}</Link></li>
+                              })
+                            }
                           </ul>
                         </div>
                       </div>
@@ -80,7 +66,7 @@ const Header = () => {
                   <Link to="/services" className={"nav__item-link"} activeClassName="active">Services</Link>
                 </li>
                 <li className="nav__item">
-                  <Link to="/career" className={"nav__item-link"}  activeClassName="active">Career</Link>
+                  <Link to="/career" className={"nav__item-link"} activeClassName="active">Career</Link>
                 </li>
                 <li className="nav__item">
                   <Link to="/contact" className={"nav__item-link"} activeClassName="active">Contacts</Link>
